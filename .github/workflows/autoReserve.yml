@@ -48,6 +48,7 @@ jobs:
           PUSHPLUS_KEY: ${{ secrets.PUSHPLUS_KEY }}
           PRIVATE_AES_KEY: ${{ secrets.PRIVATE_AES_KEY }}
         run: |
+          echo $PUSHPLUS_KEY
           python main.py
 
 #        pip install flake8 pytest
